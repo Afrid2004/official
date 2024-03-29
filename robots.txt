@@ -1,0 +1,4 @@
+user-agent: *
+Allow: /
+Allow: /sitemap.xml
+Sitemap: https://mdfaisalyousufafrid.vercel.app/sitemap.xml

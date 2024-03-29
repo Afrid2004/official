@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Afrid - Front-end Web Developer">
+    <meta property="og:title" content="Afrid - Front-end Web Developer">
+    <meta property="og:site_name" content="Afrid">
+    <meta property="og:url" content="https://devafrid.vercel.app/">
+    <meta property="og:description" content= "Hi, I'm MD Faisal Yousuf Afrid, a passionate self-thaught Front-end Developer from Bangladesh.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://devafrid.vercel.app/images/og-banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Afrid">
+    <meta name="twitter:title" content="Afrid - Front-end Web Developer">
+    <meta name="twitter:description" content="Hi, I'm MD Faisal Yousuf Afrid, a passionate self-thaught Front-end Developer from Bangladesh.">
+    <meta name="twitter:image" content="https://devafrid.vercel.app/images/og-banner.png">
+    <meta name="description" content="Hi, I'm MD Faisal Yousuf Afrid, a passionate self-thaught Front-end Developer from Bangladesh.">
+    <meta name="keywords" content="faisal yousuf afrid, faisal yousuf afridi, dev afrid, afrid front end developer, afrid portfolio web, portfolio of afrid, faisal yousuf afrid portfolio website, eyecatching website, web design, front end developer, afrid web">
+    <meta name="copyright" content="MD Faisal Yousuf Afrid">
+    <meta name="author" content="Faisal Yousuf Afrid">
+    <meta name="robots" content="index , follow">
+    <link rel="canonical" href="https://devafrid.vercel.app/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./images/pattern-2.svg" as="image">
+    <link rel="preload" href="./images/pattern-3.svg" as="image">
+    <link rel="icon" href="./images/logo/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Afrid - Front-end Web Developer</title>
+</head>
+<body id="top">
+
+    <!-- preloader-start-here -->
+    <div class="preloader-div" id="pre-loader">
+        <div class="loader-content">
+            <div class="preloader-img">
+                <img src="./images/logo/preloader.gif" draggable="false" alt="loader">
+            </div>
+            <div class="preloader-bottom">
+                <h1 class="preloader-logo">AFR<span class="preloder-span">ID</span></h1>
+                <p class="tagline">Born to Build!</p>
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end-here -->
+
+    <!-- overlay-start-here -->
+    <div class="overlay" data-overlay></div> 
+    <!-- overlay-end-here -->
+
+    <!-- modal-start-here -->
+    <div class="modal" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+            <div class="newsletter-img">
+                <img src="./images/logo/checkmark.png" draggable="false" loading="lazy" alt="subscribe_newsletter" width="400" height="400">
+            </div>
+            <div class="newsletter">
+                <form action="#">
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">Message Sent Successfully !</h3>
+                        <p class="newsletter-desc"> We'll reply your message soon.</p>
+                    </div>
+                    <span class="btn-newsletter" data-modal-close>Ok</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- modal-end-here -->
+
+    <!-- header-start-here -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <h1 class="logo">AFR<span class="afrid">ID</span></h1>
+            </a>
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="./index.html" class="logo">
+                        <h1 class="logo-nav">AFR<span class="afrid">ID</span></h1>
+                    </a>
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#home" class="navbar-link hover-1 active" data-nav-toggler>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="navbar-link hover-1" data-nav-toggler>About Me</a>
+                    </li>
+                    <li>
+                        <a href="#service" class="navbar-link hover-1" data-nav-toggler>Services</a>
+                    </li>
+                    <li>
+                        <a href="#skill" class="navbar-link hover-1" data-nav-toggler>Skills</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="navbar-link hover-1" data-nav-toggler>Experience</a>
+                    </li>
+                    <li>
+                        <a href="#project" class="navbar-link hover-1" data-nav-toggler>Projects</a>
+                    </li>
+                    <li>
+                        <a href="#footer-content" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-social-list">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" class="navbar-social"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" target="_blank" class="navbar-social"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" class="navbar-social"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank" class="navbar-social"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+    <!-- header-end-here -->
+
+    <main>
+        <!-- home-start-here -->
+        <section id="home" class="home section">
+            <div class="introdiv">
+                <div class="container">
+                    <div class="introcontainer">
+                        <div class="introtitle">
+                            <div class="intro-content">
+                                <p class="subtitle">Hello Everyone!</p>
+                                <h1 class="headline headline-1 section-title">I'm <span class="span">MD Faisal Yousuf Afrid</span></h1>
+                                <p class="subtext">Front-end Web Developer</p>
+                            </div>
+                            <a href="./images/resume/resume-of-afrid.pdf" class="btn download-btn" target="_blank">Download CV</a>
+                        </div>
+                        <div class="intro-banner">
+                            <div class="intro-img">
+                                <img src="./images/afrid.jpg" draggable="false" alt="afrid">
+                            </div>
+                            <img src="./images/pattern-2.svg" class="shape shape-1" alt="shape" width="25" height="25">
+                            <img src="./images/pattern-3.svg" class="shape shape-2"  alt="shape" width="25" height="25">
+                        </div>
+                        <img src="./images/shadow-1.svg" width="500" height="800" alt="shape" class="bg-1">
+                        <img src="./images/shadow-2.svg" width="500" height="500" alt="shape" class="bg-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home-end-here -->
+
+        <!-- about-start-here -->
+        <section class="about section" id="about" aria-labelledby="about" data-highlighter>
+            <div class="container">
+                <h2 class="headline headline-2 section-title">About Me</h2>
+                <div class="about-div">
+                    <div class="about-grid">
+                        <div class="about-img-section">
+                            <div class="overlay-img">
+                                <div class="about-img">
+                                    <img src="./images/faisal.jpg" draggable="false" loading="lazy" alt="Afrid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-desc">               
+                            <p>Hi, I'm MD Faisal Yousuf Afrid, a passionate self-thaught Front-end Developer from Bangladesh. Basically I build web application based on Javascript. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and catch user's eye. I am especially focusing on Back-end Web Developing.</p>
+                            <p>I also do Video editing and little bit of Graphic design. Since I love both, coding and editing. I'm also interested in open source, and creative coding projects.</p>
+                            <div class="about-sociolinks">
+                                <a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-end-here -->
+
+        <!-- service-start-here -->
+        <section class="service-section section" id="service" aria-labelledby="service" data-highlighter>
+            <div class="container">
+                <h2 class="headline headline-2 section-title">Services</h2>
+                <div class="service-container">
+                    <div class="service-item srv1">
+                        <div class="serviceimg">
+                            <img src="./images/programming.png" draggable="false" alt="afrid-service" loading="lazy">
+                        </div>
+                        <div class="servicetitle">
+                            <h3 class="head">Web Design</h3>
+                            <p class="service-desc">Qualified web design and attractive effects which catches visitor's eye. </p>
+                        </div>
+                    </div>
+
+                    <div class="service-item srv2">
+                        <div class="serviceimg">
+                            <img src="./images/webpage.png" draggable="false" alt="afrid-service" loading="lazy">
+                        </div>
+                        <div class="servicetitle">
+                            <h3 class="head">Web Development</h3>
+                            <p class="service-desc">Clean and fresh issue free code to make your website dynamic perfectly. </p>
+                        </div>
+                    </div>
+
+                    <div class="service-item srv3">
+                        <div class="serviceimg">
+                            <img src="./images/responsive.png" draggable="false" alt="afrid-service" loading="lazy">
+                        </div>
+                        <div class="servicetitle">
+                            <h3 class="head">Responsive Design</h3>
+                            <p class="service-desc">Responsive Design which will be work almost all browsers and screens, Mobile, Tab, PC etc.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item srv4">
+                        <div class="serviceimg">
+                            <img src="./images/video-edit.png" alt="afrid-service" draggable="false" loading="lazy">
+                        </div>
+                        <div class="servicetitle">
+                            <h3 class="head">Video Editing</h3>
+                            <p class="service-desc">Qualified Video editing and attractive effects which catches viewer's eye. </p>
+                        </div>
+                    </div>
+
+                    <div class="service-item srv5">
+                        <div class="serviceimg">
+                            <img src="./images/photoshop.png" alt="afrid-service" draggable="false" loading="lazy">
+                        </div>
+                        <div class="servicetitle">
+                            <h3 class="head">PSD To HTML</h3>
+                            <p class="service-desc">Photoshop Design to responsive front-end Web Developing.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item srv6">
+                        <div class="serviceimg">
+                            <img src="./images/wordpress.png" alt="afrid-service" draggable="false" loading="lazy">
+                        </div>
+                        <div class="servicetitle">
+                            <h3 class="head">Wordpress</h3>
+                            <p class="service-desc">Web Design using Wordpress with attractive effects and features which catches viewer's eye. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service-end-here -->
+
+        <!-- skills-start-here -->
+        <section class="skill section" id="skill" aria-labelledby="skill" data-highlighter>
+            <div class="container">
+                <h2 class="headline headline-2 section-title">Skills</h2>
+                <div class="skill-div">
+                    <div class="skill-wrapper" data-skill-wrapper>
+                        <div class="skill-grid">
+                            <div class="technical-skill" data-skill-sec>
+                                <div class="skill-item">
+                                    <div class="skill-logo">
+                                    <div class="skill-img">
+                                            <img src="./images/skill-logo/html.png" draggable="false" loading="lazy" alt="html">
+                                    </div>
+                                    </div>
+                                    <div class="skill-contetent">
+                                        <div class="skill-name">HTML <div data-start-val="70" data-end-val="90" class="num"></div></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per skill-html"  data-html></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-logo">
+                                    <div class="skill-img">
+                                            <img src="./images/skill-logo/css.png" draggable="false" loading="lazy" alt="css">
+                                    </div>
+                                    </div>
+                                    <div class="skill-contetent">
+                                        <div class="skill-name">CSS  <div data-start-val="65" data-end-val="85" class="num"></div></div>
+                                        <div class="skill-bar" > 
+                                            <div class="skill-per skill-css" data-css></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-logo">
+                                    <div class="skill-img">
+                                            <img src="./images/skill-logo/js.png" draggable="false" loading="lazy" alt="javascript">
+                                    </div>
+                                    </div>
+                                    <div class="skill-contetent">
+                                        <div class="skill-name">Javascript <div data-start-val="40" data-end-val="60" class="num"></div></div>
+                                        <div class="skill-bar"> 
+                                            <div class="skill-per skill-js"  data-js></div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="skill-item">
+                                    <div class="skill-logo">
+                                    <div class="skill-img">
+                                            <img src="./images/skill-logo/wordpress.png" draggable="false" loading="lazy" alt="wordpress">
+                                    </div>
+                                    </div>
+                                    <div class="skill-contetent">
+                                        <div class="skill-name">Wordpress <div data-start-val="30" data-end-val="50" class="num"></div></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per skill-wp" data-wp></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="proffesional-skill" >
+                                <div data-first-progress-sec class="progress-item">
+                                    <div class="circular-progress progress-one" data-circular-progress>
+                                        <div class="value-container" data-prgstart-val="50" data-prgend-val="85" data-value-container-first></div>
+                                    </div>
+                                    <p class="bar-title">Creativity</p>
+                                </div>
+
+                                <div data-second-progress-sec class="progress-item">
+                                    <div class="circular-progress progress-two" data-circular-progress>
+                                        <div class="value-container" data-prgstart-val="30" data-prgend-val="65" data-value-container-second></div>
+                                    </div>
+                                    <p class="bar-title">Communication </p>
+                                </div>
+
+                                <div data-third-progress-sec class="progress-item">
+                                    <div class="circular-progress progress-three" data-circular-progress>
+                                        <div class="value-container" data-prgstart-val="50" data-prgend-val="75" data-value-container-third></div>
+                                    </div>
+                                    <p class="bar-title">Provlem Solving</p>
+                                </div>
+
+                                <div data-four-progress-sec class="progress-item">
+                                    <div class="circular-progress progress-four" data-circular-progress>
+                                        <div class="value-container" data-prgstart-val="60" data-prgend-val="80" data-value-container-four></div>
+                                    </div>
+                                    <p class="bar-title">Team Work</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="overview-grid">
+                            <div class="overview-item">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h2>200+</h2>
+                                <p>Project Done</p>
+                            </div>
+
+                            <div class="overview-item">
+                                <i class="fa-regular fa-face-smile-beam"></i>
+                                <h2>120</h2>
+                                <p>Satisfied Clients</p>
+                            </div>
+
+                            <div class="overview-item">
+                                <i class="fa-solid fa-mug-hot"></i>
+                                <h2>1000+</h2>
+                                <p>Cup Of Coffee</p>
+                            </div>
+
+                            <div class="overview-item">
+                                <i class="fa-solid fa-trophy"></i>
+                                <h2>50</h2>
+                                <p>Special Winner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- skills-end-here -->
+        
+        <!-- experience-start-here -->
+        <section class="experience section" id="experience" aria-labelledby="experience" data-highlighter>
+            <div class="container">
+                <h2 class="section-title headline headline2">Experience</h2>
+                <div class="experience-grid">
+                    <div class="education-container">
+                        <div class="timeline" data-timeline-first>
+                            <i class="fa-solid fa-graduation-cap" data-icon-one></i>
+                            <div class="timeline-content">                           
+                                <div class="text-container" data-timeline-contentone>
+                                    <div class="date"><i class="fa-solid fa-calendar-days"></i> <p>2020 - Present</p></div>
+                                    <h2>Diploma In Engineering (CST)</h2>
+                                    <p>Studying Diploma in Engineering on Computer Science and Technology from Feni Polytechnic Institute, Feni, Bangladesh. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline" data-timeline-second>
+                            <i class="fa-solid fa-graduation-cap" data-icon-two></i>
+                            <div class="timeline-content">
+                                <div class="text-container" data-timeline-contenttwo>
+                                    <div class="date"><i class="fa-solid fa-calendar-days"></i> <p>2018 - 2020</p></div>
+                                    <h2>Secondary School Cirtificate</h2>
+                                    <p>Passed SSC Examination in the year 2020 in Science Group and secured G.P.A (4.89) from Goran Adarsha High School, Khilgaon, Dhaka.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline" data-timeline-third>
+                            <i class="fa-solid fa-graduation-cap" data-icon-three></i>
+                            <div class="timeline-content">
+                                <div class="text-container" data-timeline-contentthree>
+                                    <div class="date"><i class="fa-solid fa-calendar-days"></i> <p>2017</p></div>
+                                    <h2>Junior School Cirtificate</h2>
+                                    <p>Passed JSC Examination in the year 2017 and secured G.P.A (4.71) from Badda Alatunnesa High School, Gulshan, Dhaka.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-container">
+                        <div class="timeline" data-timeline-fourth>
+                            <i class="fa-solid fa-briefcase" data-icon-four></i>
+                            <div class="timeline-content">
+                                <div class="text-container" data-timeline-contentfour>
+                                    <div class="date"><i class="fa-solid fa-calendar-days"></i> <p>2023 - Present</p></div>
+                                    <h2>Front-end Developer</h2>
+                                    <p>Developed and delivered responsive and user-friendly web applications using HTML, CSS and Javascript that work accross all devices. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline" data-timeline-fifth>
+                            <i class="fa-solid fa-briefcase" data-icon-five></i>
+                            <div class="timeline-content">
+                                <div class="text-container" data-timeline-contentfive>
+                                    <div class="date"><i class="fa-solid fa-calendar-days"></i> <p>2021 - Present</p></div>
+                                    <h2>Website Maintenance</h2>
+                                    <p>Regularly updated and maintained the website to ensure compatibility with the latest web standards and technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline" data-timeline-sixth>
+                            <i class="fa-solid fa-briefcase" data-icon-six></i>
+                            <div class="timeline-content">
+                                <div class="text-container" data-timeline-contentsix>
+                                    <div class="date"><i class="fa-solid fa-calendar-days"></i> <p>2018 - 2021</p></div>
+                                    <h2>Video Editor</h2>
+                                    <p>Edited video by trimming, copying, Animation, Eye-Catching Effects and much more using Filmora, Clipchamp, Inshot etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- experience-end-here -->
+
+        <!-- projects-start-here -->
+        <section class="project section" id="project" aria-labelledby="project" data-highlighter>
+            <div class="container">
+                <h2 class="section-title headline headline-2">Recent Projects</h2>
+                <div class="project-grid" data-project-grid>
+                    <ul class="grid-list">
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-7.png);">
+                                    <img src="./images/card-banner-7.png" draggable="false" loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="https://homiesrealestate.vercel.app/" class="span" target="_blank" >#homies</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">January 25, 2024</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a href="https://homiesrealestate.vercel.app/" target="_blank" class="card-title">Homies - Real Estate</a>
+                                    </h3>
+                                    <div class="card-wrapper wrapper-bottom">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://devafrid.vercel.app/" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on February 08, 2024</p>
+                                            </div>
+                                            <a href="https://homiesrealestate.vercel.app/" class="card-btn" target="_blank">Live Preview</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-1.JPG);">
+                                    <img src="./images/card-banner-1.JPG" draggable="false" loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a href="https://clothefy.vercel.app/" class="span" target="_blank" >#clothefy</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">January 05, 2024</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a href="https://clothefy.vercel.app/" target="_blank" class="card-title">Clothefy - Online Store</a>
+                                    </h3>
+                                    <div class="card-wrapper wrapper-bottom">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://devafrid.vercel.app/" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on January 18, 2024</p>
+                                            </div>
+                                            <a href="https://clothefy.vercel.app/" class="card-btn" target="_blank">Live Preview</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-2.jpg);">
+                                    <img src="./images/card-banner-2.png" draggable="false" loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a class="span">#crafted_corner</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">November 20, 2023</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a class="card-title">Crafted Corner</a>
+                                    </h3>
+                                    <div class="card-wrapper">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://devafrid.vercel.app/" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on January 10, 2024</p>
+                                            </div>
+                                            <a class="card-btn">Live Preview</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-3.png);">
+                                    <img src="./images/card-banner-3.jpg" draggable="false"  loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a class="span">#istiaqs_web</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">October 15, 2023</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a class="card-title">Istiaq's Web</a>
+                                    </h3>
+                                    <div class="card-wrapper">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://devafrid.vercel.app/" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on December 25, 2023</p>
+                                            </div>
+                                            <a class="card-btn">Live Preview</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-4.JPG);">
+                                    <img src="./images/card-banner-4.JPG" draggable="false"  loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a class="span">#emart</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">August 07, 2023</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a class="card-title">E-mart</a>
+                                    </h3>
+                                    <div class="card-wrapper">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://devafrid.vercel.app/" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on October 10, 2023</p>
+                                            </div>
+                                            <a class="card-btn">Live Preview</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-5.jpg);"> 
+                                    <img src="./images/card-banner-5.png" draggable="false"  loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a class="span">#fenipoly</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">April 07, 2023</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a class="card-title">fenipoly.edu</a>
+                                    </h3>
+                                    <div class="card-wrapper">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://devafrid.vercel.app/" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on June 14, 2023</p>
+                                            </div>
+                                            <a class="card-btn">Live Preview </a>
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+            <!-- <ul class="grid-list list-two" data-projectgrid-list-two>
+                        <li>
+                            <div class="card featured-card">
+                                <figure class="card-banner blur-load" style="background-image: url(./images/card-banner-small-6.jpg);">
+                                    <img src="./images/card-banner-6.png"  loading="lazy" alt="website image" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <div class="card-wrapper">
+                                        <div class="card-tag">
+                                            <a class="span">#faisals_creation</a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <i class="fa-regular fa-calendar-days"></i>
+                                            <span class="time-desc">February 05, 2023</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="headline-3">
+                                        <a class="card-title">Faisal's CREATION</a>
+                                    </h3>
+                                    <div class="card-wrapper">
+                                        <div class="profile-card">
+                                            <div class="profile-content">
+                                                <div class="card-title"><i class="fa-solid fa-code"></i> &nbsp; Developed by&nbsp;<a href="https://mdfaisalyousufafrid.vercel.app" target="_blank">Afrid</a></div>
+                                                <p class="card-subtitle">Released on March 10, 2023</p>
+                                            </div>
+                                            <a class="card-btn">Live Preview </a>
+                                        </div>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+                <!-- <div class="project-btndiv">
+                    <a class="btn more-btn" data-showmore-btn>
+                        <span>Show More</span>
+                    </a>
+                    <a class="btn less-btn" data-showless-btn>
+                        <span>Show Less</span>
+                    </a>
+                </div> -->
+            </div>
+
+            <img src="./images/shadow-3.svg" style="display: none;" width="500" height="1500" loading="lazy" alt="project-bg" class="bg">
+        </section>
+        <!-- projects-end-here -->
+
+        <!-- review-start-here -->
+        <section class="review section" id="review" aria-labelledby="review" data-highlighter>
+            <div class="container">
+                <h2 class="section-title headline headline-2">Reviews</h2>
+                <div class="review-wrapper" data-review-wrapper>
+                    <ul class="carousel" data-review-carousel>
+                        <li class="review-card" data-review-card>
+                            <div class="review-img">
+                                <img src="./images/review/aminul.jpg" alt="aminul islam" loading="lazy" draggable="false">
+                            </div>
+                            <div class="review-desc">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>I love the website designed by Afrid, he has creativity in designing new designs and he is good at it. Best wishes, Keep it up!</p>
+                            </div>
+                            <div class="review-bottom">
+                                <div class="person-desc">
+                                    <a href="https://www.facebook.com/profile.php?id=100078713332796" target="_blank"><h3>Aminul Islam</h3></a>
+                                    <p>Student</p>
+                                </div>
+                                <div class="review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="review-card" data-review-card>
+                            <div class="review-img">
+                                <img src="./images/review/istiaq.jpg" alt="istiaq" loading="lazy" draggable="false">
+                            </div>
+                            <div class="review-desc">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>He is a good Designer. He has created a Responsive Website for me with in a few days. I really like his work. </p>
+                            </div>
+                            <div class="review-bottom">
+                                <div class="person-desc">
+                                    <a href="https://www.facebook.com/ishtiaq.sunny.12" target="_blank"><h3>Ishtiaq Sunny</h3></a>
+                                    <p>Student</p>
+                                </div>
+                                <div class="review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="review-card" data-review-card>
+                            <div class="review-img">
+                                <img src="./images/review/abdullah.jpg" alt="abdullah" loading="lazy" draggable="false">
+                            </div>
+                            <div class="review-desc">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>He is very good at what he is doing. I like his work. Especially the unique point of view of designing.</p>
+                            </div>
+                            <div class="review-bottom">
+                                <div class="person-desc">
+                                    <a href="https://www.facebook.com/mh.abdullah.50767" target="_blank"><h3>Mohammad Abdullah</h3></a>
+                                    <p>Student</p>
+                                </div>
+                                <div class="review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="review-card" data-review-card>
+                            <div class="review-img">
+                                <img src="./images/review/tarequl.jpg" alt="tarequl" loading="lazy" draggable="false">
+                            </div>
+                            <div class="review-desc">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>Amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing.</p>
+                            </div>
+                            <div class="review-bottom">
+                                <div class="person-desc">
+                                    <a href="https://www.facebook.com/profile.php?id=61551928477815" target="_blank"><h3>Tarequl Islam</h3></a>
+                                    <p>Student</p>
+                                </div>
+                                <div class="review-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- review-end-here -->
+    </main>
+
+    <!-- footer-start-here -->
+    <footer class="footer-content section" id="footer-content" aria-labelledby="footer-content" data-highlighter>
+        <div class="container">
+            <div class="card-footer">
+                <div class="section footer-top">
+                    <div class="footer-brand">
+                        <a href="./index.html" style="width: max-content;" class="logo"><h1 class="logo">AFR<span class="afrid">ID</span></h1></a>
+                        <p class="footer-text">Myself Afrid, I'm a front end web developer. I mainly work on the front side design of websites.</p>
+                        <p class="footer-list-title">Address</p>
+                        <address class="footer-text-address"><i class="fa-solid fa-location-dot"></i> Merul Badda, Gulshan, Dhaka-1212</address>
+                    </div>
+
+                    <div class="footer-list">
+                        <h1 class="footer-list-head">Contact</h1>
+                        <ul class="footer-contact">
+                            <li class="contact-list">
+                                <h3 class="call">Call us for instant support</h3>
+                                <div class="call-content">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div class="call-information">
+                                        <a href="tel:+8801922656227" class="footer-nav-link">(+880) 1922656227</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="contact-list">
+                                <h3 class="call">Write us by mail</h3>
+                                <div class="call-content mail">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <a href="mailto:mdfaisalafrid@gmail.com" class="footer-nav-link">mdfaisalafrid@gmail.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-email">
+                        <h3 class="footer-list-head">Get in touch</h3>
+
+                        <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
+                            <div class="contact-inputs">
+                                <div class="contact-content">
+                                    <input type="text" name="name"  class="contact-input" id="name"  required>
+                                    <label for="name" class="contact-label">Name</label>
+                                    <span></span>
+                                </div>
+
+                                <div class="contact-content">
+                                    <input type="email" name="email" class="contact-input" id="email" required>
+                                    <label for="email" class="contact-label">Email</label>
+                                    <span></span>
+                                </div>
+
+                                <div class="contact-content message-content">
+                                    <textarea name="message" id="message" class="contact-input" cols="30" rows="5" required></textarea>
+                                    <label for="message" class="contact-label">Message</label>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <button  id="send-btn"  type="submit" class="btn btn-message">Send <img src="./images/logo/send.png" draggable="false" loading="lazy" class="icon-img" alt="send"></button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <div class="year">Copyright &copy; 2024</div> 
+                        <div class="author"><a class="afrid-bottom" href="./index.html">Faisal Yousuf Afrid</a>| All Rights Reserved</div>
+                    </div>
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="https://www.facebook.com/"  target="_blank" class="footer-social-link"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/"  target="_blank" class="footer-social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/"  target="_blank" class="footer-social-link"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/"  target="_blank" class="footer-social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end-here -->
+
+    <!-- backtop-start-here -->
+    <a href="#top" class="back-top-btn" aria-labelledby="top" data-back-top-btn>
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- backtop-end-here -->
+ 
+    <!-- custom-js-start-here -->
+    <script src="./js/script.js"></script>
+
+    <script>
+        var preLoader = document.getElementById('pre-loader');
+        window.addEventListener("load", function(){
+            preLoader.classList.add('hide');
+        })
+        var blurDiv = document.querySelectorAll('.blur-load');
+        blurDiv.forEach(div => {
+            var  img = div.querySelector("img");
+            function loaded(){
+                div.classList.add("loaded");
+            }
+            if(img.complete){
+                loaded();
+            }
+            else{
+                img.addEventListener("load", loaded);
+            }
+        })
+    </script>
+    <!-- custom-js-end-here -->
+
+    <!-- copyright 2024 Afrid | Design & Developed by Afrid -->
+</body>
+</html>
