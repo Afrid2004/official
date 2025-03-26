@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="preloader-bottom">
-                <h1 class="preloader-logo">AFR<span class="preloder-span">ID</span></h1>
+                <h1 class="preloader-logo"><span class="preloder-span">AFR</span>ID</h1>
                 <p class="tagline">Born to Build!</p>
             </div>
         </div>
@@ -938,10 +938,10 @@
     <script src="./js/script.js"></script>
 
     <script>
-        // var preLoader = document.getElementById('pre-loader');
-        // window.addEventListener("load", function(){
-        //     preLoader.classList.add('hide');
-        // })
+        var preLoader = document.getElementById('pre-loader');
+        window.addEventListener("load", function(){
+            preLoader.classList.add('hide');
+        })
         var blurDiv = document.querySelectorAll('.blur-load');
         blurDiv.forEach(div => {
             var  img = div.querySelector("img");
