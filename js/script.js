@@ -700,6 +700,8 @@ addEventListener("mousemove", function(event) {
   //event.preventDefault();
   mouse.x = event.pageX;
   mouse.y = event.pageY;
+  var trail = document.querySelectorAll(".trail");
+  trail.forEach((dot) => { dot.classList.add("active")});
 });
 
 // animate() calls draw() then recursively calls itself
@@ -711,6 +713,7 @@ function animate() {
 
 // And get it started by calling animate().
 animate();
+
 
 
 
