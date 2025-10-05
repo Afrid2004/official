@@ -120,6 +120,7 @@ var skillSec = document.querySelector("[data-skill-sec]");
 var htmlBar = document.querySelector("[data-html]");
 var cssBar = document.querySelector("[data-css]");
 var jsBar = document.querySelector("[data-js]");
+var bootstrap = document.querySelector("[data-bootstrap]");
 var wpBar = document.querySelector("[data-wp]");
 
 var observer = new IntersectionObserver(
@@ -130,12 +131,14 @@ var observer = new IntersectionObserver(
         htmlBar.classList.add("active");
         cssBar.classList.add("active");
         jsBar.classList.add("active");
+        bootstrap.classList.add("active");
         wpBar.classList.add("active");
         startCounting();
       } else {
         htmlBar.classList.remove("active");
         cssBar.classList.remove("active");
         jsBar.classList.remove("active");
+        bootstrap.classList.remove("active");
         wpBar.classList.remove("active");
         stopCounting();
       }
@@ -708,5 +711,6 @@ function animate() {
 
 // And get it started by calling animate().
 animate();
+
 
 
