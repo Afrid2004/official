@@ -703,6 +703,10 @@ addEventListener("mousemove", function(event) {
   var trail = document.querySelectorAll(".trail");
   trail.forEach((dot) => { dot.classList.add("active")});
 });
+addEventListener("mouseleave", function() {
+  var trail = document.querySelectorAll(".trail");
+  trail.forEach((dot) => { dot.classList.remove("active")});
+});
 
 // animate() calls draw() then recursively calls itself
   // everytime the screen repaints via requestAnimationFrame().
@@ -713,6 +717,7 @@ function animate() {
 
 // And get it started by calling animate().
 animate();
+
 
 
 
