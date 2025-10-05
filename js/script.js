@@ -703,7 +703,7 @@ addEventListener("mousemove", function(event) {
   var trail = document.querySelectorAll(".trail");
   trail.forEach((dot) => { dot.classList.add("active")});
 });
-addEventListener("mouseleave", function() {
+document.addEventListener("mouseleave", function() {
   var trail = document.querySelectorAll(".trail");
   trail.forEach((dot) => { dot.classList.remove("active")});
 });
@@ -717,6 +717,7 @@ function animate() {
 
 // And get it started by calling animate().
 animate();
+
 
 
 
