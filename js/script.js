@@ -19,7 +19,7 @@ function modalCloseFunc() {
 modalCloseOverlay.addEventListener("click", modalCloseFunc);
 modalCloseBtns.forEach((btn) => {
   btn.addEventListener("click", modalCloseFunc);
-})
+});
 
 contactContent.forEach((content) => {
   var input = content.querySelector(".contact-input");
@@ -46,9 +46,9 @@ function sendEmail() {
       modalRight.style.display = "block";
     })
     .catch((err) => {
-        modalOpenFunc();
-        modalWrong.classList.add("active");
-        modalRight.style.display = "none";
+      modalOpenFunc();
+      modalWrong.classList.add("active");
+      modalRight.style.display = "none";
     });
   contactLabel.forEach((label) => {
     label.classList.remove("active");
@@ -146,7 +146,7 @@ var observer = new IntersectionObserver(
   },
   {
     threshold: 0.5, //----------if 0.5 then observer will start observe when scroll half of the element
-  }
+  },
 );
 observer.observe(skillSec);
 
@@ -195,13 +195,13 @@ var progressTwo = document.querySelector(".progress-two");
 var progressThree = document.querySelector(".progress-three");
 var progressFour = document.querySelector(".progress-four");
 var firstValueContainer = document.querySelector(
-  "[data-value-container-first]"
+  "[data-value-container-first]",
 );
 var secondValueContainer = document.querySelector(
-  "[data-value-container-second]"
+  "[data-value-container-second]",
 );
 var thirdValueContainer = document.querySelector(
-  "[data-value-container-third]"
+  "[data-value-container-third]",
 );
 var fourValueContainer = document.querySelector("[data-value-container-four]");
 var progressInterval = 2000;
@@ -219,7 +219,7 @@ var firstCircleObserver = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 firstCircleObserver.observe(firstProgressSec);
 
@@ -236,7 +236,7 @@ var secondCircleObserver = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 secondCircleObserver.observe(secondProgressSec);
 
@@ -253,7 +253,7 @@ var thirdCircleObserver = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 thirdCircleObserver.observe(thirdProgressSec);
 
@@ -270,7 +270,7 @@ var fourCircleObserver = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 fourCircleObserver.observe(fourProgressSec);
 
@@ -429,7 +429,7 @@ var timelineIconSix = document.querySelector("[data-icon-six]");
 var timelineContentOne = document.querySelector("[data-timeline-contentone]");
 var timelineContentTwo = document.querySelector("[data-timeline-contenttwo]");
 var timelineContentThree = document.querySelector(
-  "[data-timeline-contentthree]"
+  "[data-timeline-contentthree]",
 );
 var timelineContentFour = document.querySelector("[data-timeline-contentfour]");
 var timelineContentFive = document.querySelector("[data-timeline-contentfive]");
@@ -452,7 +452,7 @@ var timelineObserverFirst = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 timelineObserverFirst.observe(timelineFirst);
 
@@ -473,7 +473,7 @@ var timelineObserverSecond = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 timelineObserverSecond.observe(timelineSecond);
 
@@ -494,7 +494,7 @@ var timelineObserverThird = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 timelineObserverThird.observe(timelineThird);
 
@@ -515,7 +515,7 @@ var timelineObserverFourth = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 timelineObserverFourth.observe(timelineFourth);
 
@@ -536,7 +536,7 @@ var timelineObserverFifth = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 timelineObserverFifth.observe(timelineFifth);
 
@@ -557,7 +557,7 @@ var timelineObserverSixth = new IntersectionObserver(
   },
   {
     threshold: 0.5,
-  }
+  },
 );
 timelineObserverSixth.observe(timelineSixth);
 
@@ -642,12 +642,6 @@ document.addEventListener("mouseup", dragStop);
 reviewWrapper.addEventListener("mouseenter", () => clearTimeout(timeOut));
 reviewWrapper.addEventListener("mouseleave", autoPlay);
 
+const year = new Date().getFullYear();
 
-
-
-
-
-
-
-
-
+document.querySelector(".year").innerHTML = `Copyright &copy; 2025 - ${year}`;
